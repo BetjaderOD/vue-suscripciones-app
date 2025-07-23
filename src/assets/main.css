@@ -1,0 +1,39 @@
+@import './base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #ffffff;
+  --color-primary: #0e1556;
+  --color-secondary: #03be91;
+  --color-secondary-2: #1d4de6;
+  --color-text: #0e1556;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+#app {
+  width: 100%;
+  padding: 0;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  transition: background-color 0.3s ease;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+a:hover {
+  background-color: rgba(29, 77, 230, 0.1);
+}
