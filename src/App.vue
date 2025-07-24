@@ -29,5 +29,5 @@
 </template>
 
 <script lang="ts" setup>
-// nada por ahora
+
 </script>

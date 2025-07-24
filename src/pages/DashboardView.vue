@@ -31,9 +31,7 @@ onMounted(() => {
         </p>
       </v-col>
     </v-row>
-    <!-- Layout horizontal -->
-    <v-row justify="center" align="stretch" class="gap-6">
-      <!-- PlanCard o Skeleton -->
+     <v-row justify="center" align="stretch" class="gap-6">
       <v-col cols="12" md="4">
         <div v-if="userStore.loading">
           <v-skeleton-loader type="card" height="250px" />
@@ -48,7 +46,6 @@ onMounted(() => {
         />
       </v-col>
 
-      <!-- Historial o Skeleton -->
       <v-col cols="12" md="8">
         <v-card class="pa-6 h-100" elevation="2">
           <v-card-title class="text-h6 font-weight-bold mb-4">
