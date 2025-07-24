@@ -1,32 +1,33 @@
 <template>
-  <header class="w-full bg-primary text-white shadow-md fixed top-0 left-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold tracking-wide flex items-center gap-2">
-        📋 <span>Pai – Suscripciones</span>
-      </h1>
-
-      <nav class="flex items-center space-x-4 text-sm">
-        <RouterLink
+  <v-app>
+    <v-app-bar color="primary" dark flat>
+      <v-container class="d-flex justify-space-between align-center">
+        <v-btn
+          variant="plain"
           to="/dashboard"
-          class="px-3 py-1 rounded hover:bg-white hover:text-primary transition"
-          active-class="font-semibold underline"
+          class="text-white text-h6 font-weight-bold"
+          prepend-icon="mdi-clipboard-text"
         >
-          Dashboard
-        </RouterLink>
-        <RouterLink
-          to="/configuracion"
-          class="px-3 py-1 rounded hover:bg-white hover:text-primary transition"
-          active-class="font-semibold underline"
-        >
-          Configuración
-        </RouterLink>
-      </nav>
-    </div>
-  </header>
+          Pai – Suscripciones
+        </v-btn>
 
-  <main class="bg-background min-h-screen pt-24 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto">
-      <RouterView />
-    </div>
-  </main>
+        <div class="d-flex gap-2">
+          <v-btn variant="plain" to="/dashboard" color="white" exact>
+            Dashboard
+          </v-btn>
+          <v-btn variant="plain" to="/configuracion" color="white" exact>
+            Configuración
+          </v-btn>
+        </div>
+      </v-container>
+    </v-app-bar>
+
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
+
+<script lang="ts" setup>
+// nada por ahora
+</script>

@@ -1,7 +1,16 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import VueDevTools from 'vite-plugin-vue-devtools'
+import { defineConfig } from "vitest/config";
+import vue from "@vitejs/plugin-vue";
+import path from "path";
 
 export default defineConfig({
-  plugins: [vue(), VueDevTools()],
-})
+  plugins: [vue()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  test: {
+    environment: "jsdom",
+    globals: true,
+  },
+});
