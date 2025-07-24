@@ -114,8 +114,4 @@ src/
 - Implementar autenticación real con backend (actualmente simulada).
 - Agregar paginación o scroll infinito en historial de pagos.
 - Permitir cambiar de plan desde la interfaz con confirmación.
-- Integrar Stripe para pagos reales.
-- Mejorar accesibilidad (mejor contraste, etiquetas ARIA).
-- Implementar pruebas E2E con Cypress o Playwright.
-- Optimizar carga inicial (lazy loading de más componentes o módulos).
 - Agregar modo oscuro y selector de idioma.
