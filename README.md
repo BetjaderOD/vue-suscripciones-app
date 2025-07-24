@@ -100,7 +100,7 @@ src/
 
 ---
 
-## 📸 Capturas (opcional)
+## 📸 Capturas 
 
 <img width="1900" height="932" alt="image" src="https://github.com/user-attachments/assets/c5e0e049-812e-4431-9e00-3b909b29db77" />
 <img width="1915" height="944" alt="image" src="https://github.com/user-attachments/assets/e6e33701-451d-40af-8c34-ac5d78ac0855" />
